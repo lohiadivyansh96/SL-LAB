@@ -1,0 +1,17 @@
+
+print "Factorial"
+
+a = raw_input("Enter a no")
+a = int(a)
+fact = a
+
+def fact(a):
+	if a ==0:
+		print 1
+	else:
+		for i in range(2,a):
+			a = a*i
+	return a
+
+m = fact(a)
+print "Factorial of %s is %s" %(a,m) 
