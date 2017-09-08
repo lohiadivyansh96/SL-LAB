@@ -1,0 +1,20 @@
+print "Linear Search"
+
+list =[]
+n = raw_input("Enter no. of elements")
+n = int(n)
+for i in range(0,n):
+	value = raw_input()
+	list.append(value)
+flag = 0
+m = raw_input("Enter key: ")
+m = int(m)
+
+for j in range(0,n):
+	if list[j] == m:	
+		flag = 1
+
+if flag == 1:
+	print "Key found"
+else:
+	print "Key not found"
