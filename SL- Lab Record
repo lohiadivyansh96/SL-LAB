@@ -1,0 +1,22 @@
+Contents in SL Lab Record File
+
+Topics: 
+(Include a short program/example code in each topic)
+
+1. Beginning and History of Python
+2. Variables – Integer, String, etc
+3. Input from User – raw_input
+4. 	Type
+	Dir
+	For
+	While 
+	'If' statement
+5. How to Define a Function
+6. List  (Mutable property define)
+	- Any 3 Functions (Sort, Append, etc)
+7. Tuple (Immutable Propery)
+	- Any 3 Functions
+8. Dictionry
+9. One-List Comprehension
+10. Lambda Function
+	- (Map, Reduce, Filter)
