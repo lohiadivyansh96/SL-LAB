@@ -1,0 +1,16 @@
+print ("Conversion of Celsius and Fahrenhiet")
+print ("1. Convert Fahrenhiet to Celsius")
+print ("2. Convert Celsius to Fahrenhiet")
+c=0
+f=0
+choice = int(raw_input("Enter Choice: "))
+if(choice == 1):
+	f = float(raw_input("Enter Temp. in Fahrenheit: "))
+	c = (f-32)*5/9
+	print "Temp in Celsius : ",c,"*C"
+elif(choice == 2):
+	c=  float(raw_input("Enter Temp. in Celsius: "))
+	f = (c*9/5) + 32
+	print "Temp in Fahrenheit : ",f
+else:
+	print("Enter a choice bw 1 and 2")
