@@ -1,0 +1,49 @@
+class employee:
+	raise_amount = 1.05
+	def __init__(self,first,last,pay):
+		self.first = first
+		self.last = last
+		self.pay = pay
+		self.mail = first+ '.'+last+'@company.com'
+	def fullname(self):
+		return '{}{}'.format(self.first,self.last)
+
+	def apply_raise(self):	
+		self.pay = int(self.pay*1.04)
+emp1 = employee('Ram', 'Singh' ,1000)
+print (emp1.mail)
+emp2 = employee("Tomar", 'Pan' ,500)
+print (emp2.mail)
+
+print(emp1.fullname())
+
+print(employee.fullname(emp2))
+
+print(emp1.__dict__)
+print(employee.__dict__)
+print(emp2.__dict__)
+
+print("\n")
+print "Original Pay"
+print (emp1.pay)
+print "Raised Pay "
+emp1.apply_raise()
+print(emp1.pay)
+
+print("\n")
+print(emp1.raise_amount)
+print(emp2.raise_amount)
+print(employee.raise_amount)
+
+
+print("\n")
+employee.raise_amount = 1.06
+print(emp1.raise_amount)
+print(emp2.raise_amount)
+print(employee.raise_amount)
+
+print("\n")
+emp1.raise_amount = 1.09
+print(emp1.raise_amount)
+print(emp2.raise_amount)
+print(employee.raise_amount)
