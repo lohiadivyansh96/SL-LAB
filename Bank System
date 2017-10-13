@@ -1,0 +1,40 @@
+class Bank:
+	def __init__(self, name, city, ano, bal):
+		self.name = name;
+		self.city = city;
+		self.ano = ano;
+		self.bal = bal;
+	
+	
+	def credit(self,amt):
+		self.bal = self.bal+amt
+		print ("\nAmount to be credited: " + str(amt))
+		print ("New Balance after credit =" + str(self.bal))
+
+	
+	def debit(self,amt):
+		if amt>self.bal:
+			print ("\nAmount to be debited: " + str(amt))
+			print "Amount to be debited is greater than current balance!!!"
+		elif self.bal-amt <1000:
+			print ("\nAmount to be debited: " + str(amt))
+			print "Balance in Account cannot be less than 1000"
+		else:
+			self.bal = self.bal-amt;
+			print ("\nAmount to be debited: " + str(amt))
+			print ("New Balance after Debit = " + str(self.bal) +"\n\n")
+	
+	
+	def display(self):
+		print ("Account Holder's Name: " + str(self.name))
+		print ("Account Holder's City: " + str(self.city))
+		print ("Account Holder's Account No.: " + str(self.ano))
+		print ("Account Holder's Balance: " + str(self.bal))
+	
+bank1 = Bank("Div", "Kol",234124, 3000)
+bank1.display()
+bank1.credit(1000)
+bank1.debit(6000)
+bank1.debit(3500)
+bank1.debit(1500)
+
